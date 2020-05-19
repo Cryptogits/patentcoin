@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UTIL_MACROS_H
-#define BITCOIN_UTIL_MACROS_H
+#ifndef PATENTCOIN_UTIL_MACROS_H
+#define PATENTCOIN_UTIL_MACROS_H
 
 #define PASTE(x, y) x ## y
 #define PASTE2(x, y) PASTE(x, y)
 
-#endif // BITCOIN_UTIL_MACROS_H
+#endif // PATENTCOIN_UTIL_MACROS_H

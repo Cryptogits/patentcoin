@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_CREATEWALLETDIALOG_H
-#define BITCOIN_QT_CREATEWALLETDIALOG_H
+#ifndef PATENTCOIN_QT_CREATEWALLETDIALOG_H
+#define PATENTCOIN_QT_CREATEWALLETDIALOG_H
 
 #include <QDialog>
 
@@ -33,4 +33,4 @@ private:
     Ui::CreateWalletDialog *ui;
 };
 
-#endif // BITCOIN_QT_CREATEWALLETDIALOG_H
+#endif // PATENTCOIN_QT_CREATEWALLETDIALOG_H

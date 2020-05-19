@@ -6,8 +6,8 @@
 #include <vector>
 #include <netaddress.h>
 
-#ifndef BITCOIN_NET_PERMISSIONS_H
-#define BITCOIN_NET_PERMISSIONS_H
+#ifndef PATENTCOIN_NET_PERMISSIONS_H
+#define PATENTCOIN_NET_PERMISSIONS_H
 enum NetPermissionFlags
 {
     PF_NONE = 0,
@@ -59,4 +59,4 @@ public:
     CSubNet m_subnet;
 };
 
-#endif // BITCOIN_NET_PERMISSIONS_H
+#endif // PATENTCOIN_NET_PERMISSIONS_H

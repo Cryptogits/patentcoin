@@ -15,7 +15,7 @@ variants.
 - `test_address()` is called to call getaddressinfo for an address on node1
   and test the values returned."""
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 from test_framework.descriptors import descsum_create
 from test_framework.util import (
     assert_equal,
@@ -27,7 +27,7 @@ from test_framework.wallet_util import (
     test_address,
 )
 
-class ImportDescriptorsTest(BitcoinTestFramework):
+class ImportDescriptorsTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
         self.extra_args = [["-addresstype=legacy"],

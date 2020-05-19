@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_TEST_FUZZ_UTIL_H
-#define BITCOIN_TEST_FUZZ_UTIL_H
+#ifndef PATENTCOIN_TEST_FUZZ_UTIL_H
+#define PATENTCOIN_TEST_FUZZ_UTIL_H
 
 #include <amount.h>
 #include <arith_uint256.h>
@@ -149,4 +149,4 @@ NODISCARD bool AdditionOverflow(const T i, const T j) noexcept
     return std::numeric_limits<T>::max() - i < j;
 }
 
-#endif // BITCOIN_TEST_FUZZ_UTIL_H
+#endif // PATENTCOIN_TEST_FUZZ_UTIL_H

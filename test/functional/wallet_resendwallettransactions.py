@@ -8,10 +8,10 @@ import time
 from test_framework.blocktools import create_block, create_coinbase
 from test_framework.messages import ToHex
 from test_framework.mininode import P2PTxInvStore, mininode_lock
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 from test_framework.util import assert_equal, wait_until
 
-class ResendWalletTransactionsTest(BitcoinTestFramework):
+class ResendWalletTransactionsTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
 

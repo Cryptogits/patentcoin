@@ -11,7 +11,7 @@
 namespace WalletTool {
 
 // The standard wallet deleter function blocks on the validation interface
-// queue, which doesn't exist for the bitcoin-wallet. Define our own
+// queue, which doesn't exist for the patentcoin-wallet. Define our own
 // deleter here.
 static void WalletToolReleaseWallet(CWallet* wallet)
 {

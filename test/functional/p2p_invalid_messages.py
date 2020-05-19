@@ -13,7 +13,7 @@ from test_framework.mininode import (
     P2PDataStore,
     P2PInterface,
 )
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 
 
 class msg_unrecognized:
@@ -31,7 +31,7 @@ class msg_unrecognized:
         return "{}(data={})".format(self.msgtype, self.str_data)
 
 
-class InvalidMessagesTest(BitcoinTestFramework):
+class InvalidMessagesTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

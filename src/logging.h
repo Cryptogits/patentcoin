@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_LOGGING_H
-#define BITCOIN_LOGGING_H
+#ifndef PATENTCOIN_LOGGING_H
+#define PATENTCOIN_LOGGING_H
 
 #include <fs.h>
 #include <tinyformat.h>
@@ -184,4 +184,4 @@ static inline void LogPrintf(const char* fmt, const Args&... args)
         }                                    \
     } while (0)
 
-#endif // BITCOIN_LOGGING_H
+#endif // PATENTCOIN_LOGGING_H

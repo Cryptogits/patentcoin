@@ -1,0 +1,33 @@
+# /etc/conf.d/patentcoind: config file for /etc/init.d/patentcoind
+
+# Config file location
+#PATENTCOIND_CONFIGFILE="/etc/patentcoin/patentcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $PATENTCOIND_USER)
+#PATENTCOIND_PIDDIR="/var/run/patentcoind"
+
+# What filename to give the pidfile
+#PATENTCOIND_PIDFILE="${PATENTCOIND_PIDDIR}/patentcoind.pid"
+
+# Where to write patentcoind data (be mindful that the blockchain is large)
+#PATENTCOIND_DATADIR="/var/lib/patentcoind"
+
+# User and group to own patentcoind process
+#PATENTCOIND_USER="patentcoin"
+#PATENTCOIND_GROUP="patentcoin"
+
+# Path to patentcoind executable
+#PATENTCOIND_BIN="/usr/bin/patentcoind"
+
+# Nice value to run patentcoind under
+#PATENTCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#PATENTCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for patentcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+PATENTCOIND_SIGTERM_TIMEOUT=600

@@ -11,12 +11,12 @@ RPCs tested are:
 """
 from collections import defaultdict
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error
 from test_framework.wallet_util import test_address
 
 
-class WalletLabelsTest(BitcoinTestFramework):
+class WalletLabelsTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -36,7 +36,7 @@ class WalletLabelsTest(BitcoinTestFramework):
         assert_equal(node.getbalance(), 100)
 
         # there should be 2 address groups
-        # each with 1 address with a balance of 50 Bitcoins
+        # each with 1 address with a balance of 50 Patentcoins
         address_groups = node.listaddressgroupings()
         assert_equal(len(address_groups), 2)
         # the addresses aren't linked now, but will be after we send to the

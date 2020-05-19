@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_WALLETMODEL_H
-#define BITCOIN_QT_WALLETMODEL_H
+#ifndef PATENTCOIN_QT_WALLETMODEL_H
+#define PATENTCOIN_QT_WALLETMODEL_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/bitcoin-config.h>
+#include <config/patentcoin-config.h>
 #endif
 
 #include <key.h>
@@ -47,7 +47,7 @@ QT_BEGIN_NAMESPACE
 class QTimer;
 QT_END_NAMESPACE
 
-/** Interface to Bitcoin wallet from Qt view code. */
+/** Interface to Patentcoin wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT
@@ -230,4 +230,4 @@ public Q_SLOTS:
     void pollBalanceChanged();
 };
 
-#endif // BITCOIN_QT_WALLETMODEL_H
+#endif // PATENTCOIN_QT_WALLETMODEL_H

@@ -13,7 +13,7 @@ NO_QR ?=
 NO_WALLET ?=
 NO_ZMQ ?=
 NO_UPNP ?=
-FALLBACK_DOWNLOAD_PATH ?= https://bitcoincore.org/depends-sources
+FALLBACK_DOWNLOAD_PATH ?= https://patentcoincore.org/depends-sources
 
 BUILD = $(shell ./config.guess)
 HOST ?= $(BUILD)

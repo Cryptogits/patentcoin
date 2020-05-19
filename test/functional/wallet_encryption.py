@@ -6,14 +6,14 @@
 
 import time
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 from test_framework.util import (
     assert_raises_rpc_error,
     assert_greater_than,
     assert_greater_than_or_equal,
 )
 
-class WalletEncryptionTest(BitcoinTestFramework):
+class WalletEncryptionTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

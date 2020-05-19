@@ -4,14 +4,14 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test multiwallet.
 
-Verify that a bitcoind node can load multiple wallet files
+Verify that a patentcoind node can load multiple wallet files
 """
 from decimal import Decimal
 import os
 import shutil
 import time
 
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 from test_framework.test_node import ErrorMatch
 from test_framework.util import (
     assert_equal,
@@ -21,7 +21,7 @@ from test_framework.util import (
 FEATURE_LATEST = 169900
 
 
-class MultiWalletTest(BitcoinTestFramework):
+class MultiWalletTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 2

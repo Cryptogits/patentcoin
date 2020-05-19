@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_DB_H
-#define BITCOIN_WALLET_DB_H
+#ifndef PATENTCOIN_WALLET_DB_H
+#define PATENTCOIN_WALLET_DB_H
 
 #include <clientversion.h>
 #include <fs.h>
@@ -411,4 +411,4 @@ public:
 
 std::string BerkeleyDatabaseVersion();
 
-#endif // BITCOIN_WALLET_DB_H
+#endif // PATENTCOIN_WALLET_DB_H

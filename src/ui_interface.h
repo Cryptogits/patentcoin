@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UI_INTERFACE_H
-#define BITCOIN_UI_INTERFACE_H
+#ifndef PATENTCOIN_UI_INTERFACE_H
+#define PATENTCOIN_UI_INTERFACE_H
 
 #include <functional>
 #include <memory>
@@ -127,4 +127,4 @@ bool InitError(const bilingual_str& str);
 
 extern CClientUIInterface uiInterface;
 
-#endif // BITCOIN_UI_INTERFACE_H
+#endif // PATENTCOIN_UI_INTERFACE_H

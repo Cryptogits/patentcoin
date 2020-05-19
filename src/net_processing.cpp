@@ -33,7 +33,7 @@
 #include <typeinfo>
 
 #if defined(NDEBUG)
-# error "Bitcoin cannot be compiled without assertions."
+# error "Patentcoin cannot be compiled without assertions."
 #endif
 
 /** Expiration time for orphan transactions in seconds */
@@ -1966,7 +1966,7 @@ void static ProcessOrphanTx(CConnman* connman, CTxMemPool& mempool, std::set<uin
             if (!orphanTx.HasWitness() && orphan_state.GetResult() != TxValidationResult::TX_WITNESS_MUTATED) {
                 // Do not use rejection cache for witness transactions or
                 // witness-stripped transactions, as they can have been malleated.
-                // See https://github.com/bitcoin/bitcoin/issues/8279 for details.
+                // See https://github.com/patentcoin/patentcoin/issues/8279 for details.
                 assert(recentRejects);
                 recentRejects->insert(orphanHash);
             }
@@ -2761,7 +2761,7 @@ bool ProcessMessage(CNode* pfrom, const std::string& msg_type, CDataStream& vRec
             if (!tx.HasWitness() && state.GetResult() != TxValidationResult::TX_WITNESS_MUTATED) {
                 // Do not use rejection cache for witness transactions or
                 // witness-stripped transactions, as they can have been malleated.
-                // See https://github.com/bitcoin/bitcoin/issues/8279 for details.
+                // See https://github.com/patentcoin/patentcoin/issues/8279 for details.
                 assert(recentRejects);
                 recentRejects->insert(tx.GetHash());
                 if (RecursiveDynamicUsage(*ptx) < 100000) {

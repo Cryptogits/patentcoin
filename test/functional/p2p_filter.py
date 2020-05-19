@@ -19,7 +19,7 @@ from test_framework.messages import (
 )
 from test_framework.mininode import P2PInterface
 from test_framework.script import MAX_SCRIPT_ELEMENT_SIZE
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import PatentcoinTestFramework
 
 
 class FilterNode(P2PInterface):
@@ -52,7 +52,7 @@ class FilterNode(P2PInterface):
         self.tx_received = True
 
 
-class FilterTest(BitcoinTestFramework):
+class FilterTest(PatentcoinTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = False
         self.num_nodes = 1
